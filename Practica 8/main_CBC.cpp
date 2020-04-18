@@ -24,13 +24,6 @@ int main()
                             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             0x00, 0x00, 0x00, 0x00};
 
-    unsigned char XOR[16];
-
-    for (int i = 0; i < 16; i++)
-    {
-        XOR[i] = Bloque_1_Texto[i] ^ IV[i];
-    }
-
     unsigned char mTexto[4][4]; // Matriz 4x4 del Texto, almacenara XOR1
     unsigned char mClave[4][4]; // Matriz 4x4 de la Clave
 
@@ -75,5 +68,4 @@ int main()
         }
         cout << endl;
     }
-
 }
