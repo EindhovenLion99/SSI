@@ -35,7 +35,7 @@ bool iteraciones(int N, int s, int v)
 
     if (e == 0)
     {
-        if (y * y == fmod(a, N))
+        if (fmod(y * y, N) == fmod(a, N))
         {
             return true;
         }
@@ -43,7 +43,7 @@ bool iteraciones(int N, int s, int v)
     }
     else
     {
-        if (y * y == fmod(a * v, N))
+        if (fmod(y * y, N) == fmod(a * v, N))
         {
             return true;
         }
